@@ -63,7 +63,8 @@ mkdir build && cd build && cmake ..
 make
 sudo make install
 ```
-
+instead of 32 and 33 line in So2.cpp replace with 
+```unit_complex_ = std::complex<double>(1.0, 0.0); ``` for building in ubuntu20.04
 ### 2.4 Mimalloc (optional)
 
 Mimalloc is a high-performance memory allocator developed by Microsoft, optimized for speed and memory efficiency.
@@ -83,7 +84,7 @@ Vikit contains camera models, some math and interpolation functions that we need
 cd catkin_ws/src
 git clone https://github.com/xuankuzcr/rpg_vikit.git
 ```
-
+Use branch called ##test
 ### 2.6 **livox_ros_driver**
 
 Follow [livox_ros_driver Installation](https://github.com/Livox-SDK/livox_ros_driver).
